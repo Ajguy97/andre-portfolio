@@ -1,0 +1,25 @@
+.margin-all {
+  margin: 5px;
+}
+
+.col-mid-left {
+ vertical-align: middle;
+}
+
+.centeralign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-top{
+  margin-top: 50px;
+}
+
+.container-fluid{
+  background-color: indigo;
+}
+
+h1, h2, p , span {
+  color: white;
+}
