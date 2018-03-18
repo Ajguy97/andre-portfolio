@@ -1,0 +1,10 @@
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.header {
+  margin-top:-50px;
+}

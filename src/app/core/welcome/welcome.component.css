@@ -17,9 +17,14 @@
 }
 
 .container-fluid{
-  background-color: indigo;
+  background-color: darkblue;
 }
+
 
 h1, h2, p , span {
   color: white;
+}
+
+.wrapper{
+  min-height: 100vh;
 }

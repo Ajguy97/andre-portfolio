@@ -1,0 +1,20 @@
+
+.sidenav-container{
+  background-color: lightblue;
+  min-height: 100vh;
+}
+
+.sidenav{
+  background-color: darkblue;
+  width: 150px ;
+}
+
+.sidenav button{
+  font-weight: bold;
+  color: white;
+}
+
+.container-fluid{
+  min-height: 100vh;
+}
+

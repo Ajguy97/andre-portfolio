@@ -1,0 +1,29 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav"  #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+               (closed)="events.push('close!')">
+    <button mat-button="">Formula List</button>
+<button mat-button="">New Formula</button>
+
+
+
+  </mat-sidenav>
+
+  <!--content goes here-->
+  <mat-sidenav-content class="sidenav-content">
+    <button mat-icon-button>
+      <mat-icon aria-label="Example icon-button with a heart icon" (click)="sidenav.toggle()" >menu</mat-icon>
+    </button>
+    <div class="container-fluid">
+
+    <app-formula-card></app-formula-card>
+    </div>
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
