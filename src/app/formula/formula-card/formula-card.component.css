@@ -6,3 +6,30 @@
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
+.margin-all {
+  margin: 5px;
+}
+
+.card-title{
+  font-weight: bold;
+  font-size: large;
+}
+
+.header-button{
+  font-weight: bold;
+  color: white;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wrapper{
+  margin: 20px;
+}
+
+.card-actions-wrapper{
+  min-height: 50px;
+}

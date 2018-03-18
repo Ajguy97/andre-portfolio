@@ -1,9 +1,8 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav class="sidenav"  #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+  <mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
                (closed)="events.push('close!')">
     <button mat-button="">Formula List</button>
-<button mat-button="">New Formula</button>
-
+    <button mat-button="">New Formula</button>
 
 
   </mat-sidenav>
@@ -11,11 +10,13 @@
   <!--content goes here-->
   <mat-sidenav-content class="sidenav-content">
     <button mat-icon-button>
-      <mat-icon aria-label="Example icon-button with a heart icon" (click)="sidenav.toggle()" >menu</mat-icon>
+      <mat-icon aria-label="Example icon-button with a heart icon" (click)="sidenav.toggle()">menu</mat-icon>
     </button>
-    <div class="container-fluid">
 
-    <app-formula-card></app-formula-card>
+    <div class="container-fluid">
+      <div class="row">
+        <app-formula-card></app-formula-card>
+      </div>
     </div>
 
 
