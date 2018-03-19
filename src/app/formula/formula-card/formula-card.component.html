@@ -2,38 +2,28 @@
 <div class="card-wrapper">
   <mat-card class="example-card">
     <mat-card-header>
-      <mat-card-title class="card-title">Force</mat-card-title>
+      <mat-card-title class="card-title">{{formula.formulaName}}</mat-card-title>
 
     </mat-card-header>
 
     <mat-card-content>
-     <button mat-raised-button="" color="primary">Force</button>
-     <button mat-raised-button="" color="primary">Mass</button>
-     <button mat-raised-button="" color="primary">Acceleration</button>
+     <!--<button *ngFor="let _variables of formula.variables" mat-raised-button="" color="primary" class="margin-all">{{ _variables.name}}</button>-->
 
         <div class="example-container">
-          <mat-form-field>
-            <input matInput placeholder="Force">
+          <mat-form-field>*ngFor="let _variables of formula.variables">
+            <input matInput placeholder="{{_variables.name}}">
           </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Mass">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput placeholder="Acceleration">
-          </mat-form-field>
-
-
         </div>
 
       <div>
-        <span class="card-title">Force : ...... N</span>
+        <span class="card-title">{{formula.formulaName}} : {{answer}} N</span>
       </div>
 
 
     </mat-card-content>
 
     <mat-card-actions class="card-actions-wrapper">
-      <button mat-raised-button="" color="primary" class="float-right">Remove</button>
+      <!--<button mat-raised-button="" color="primary" class="float-right">Remove</button>-->
       <button mat-raised-button="" color="primary" class="float-right">Calculate</button>
 
     </mat-card-actions>

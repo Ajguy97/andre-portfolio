@@ -1,3 +1,6 @@
-<p>
-  formula-list works!
-</p>
+<div class="row">
+<app-formula-card
+ *ngFor="let _formula of formulaList"
+ [formula]="_formula"
+></app-formula-card>
+</div>
