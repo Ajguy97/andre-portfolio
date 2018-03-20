@@ -10,12 +10,12 @@
      <!--<button *ngFor="let _variables of formula.variables" mat-raised-button="" color="primary" class="margin-all">{{ _variables.name}}</button>-->
 
         <div class="example-container">
-          <mat-form-field>*ngFor="let _variables of formula.variables">
-            <input matInput placeholder="{{_variables.name}}">
+          <mat-form-field *ngFor="let _formulaVariables of formula.formulaVariables">
+            <input matInput placeholder="{{_formulaVariables.name}}" [(ngModel)]="_formulaVariables.variableValue">
           </mat-form-field>
         </div>
 
-      <div>
+      <div *ngIf="answer">
         <span class="card-title">{{formula.formulaName}} : {{answer}} N</span>
       </div>
 
@@ -24,7 +24,7 @@
 
     <mat-card-actions class="card-actions-wrapper">
       <!--<button mat-raised-button="" color="primary" class="float-right">Remove</button>-->
-      <button mat-raised-button="" color="primary" class="float-right">Calculate</button>
+      <button mat-raised-button="" color="primary" class="float-right" (click)="calculate()">Calculate</button>
 
     </mat-card-actions>
   </mat-card>

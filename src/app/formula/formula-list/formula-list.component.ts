@@ -8,7 +8,7 @@ import {Formula} from '../domain/formula';
   styleUrls: ['./formula-list.component.css']
 })
 export class FormulaListComponent implements OnInit {
-  formulaList: Array[Formula] = [];
+  formulaList: Formula[] = [];
 
   constructor(
     private formulaService: FormulaService

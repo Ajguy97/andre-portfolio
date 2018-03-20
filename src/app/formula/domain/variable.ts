@@ -1,6 +1,7 @@
 export class Variable {
   constructor(
-    private name: String,
-    private measurement: String
+    public name: string,
+    public variableValue: number,
+    public measurement: string
   ) {}
 }

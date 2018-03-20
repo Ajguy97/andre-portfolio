@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Formula } from './domain/formula';
-import { Variable } from './domain/variable.ts';
+import { Variable } from './domain/variable';
 
 @Injectable()
 export class FormulaService {
 
-  private formulaList: Array[Formula] = [
+  private formulaList: Formula[] = [
     new Formula('Force',
       [
         // new Variable('force', 'N'),
-        new Variable('mass', 'N'),
-        new Variable('acceleration', 'N')
+        new Variable('mass', 2, 'N'),
+        new Variable('acceleration', 2 , 'N')
       ],
-      'm*a'
+      'mass*acceleration'
     )
     // , new Formula('Velocity',
     //   [
